@@ -1,5 +1,6 @@
-$all-border: 8px solid #000;
 $color-border: #000;
+$width-border: 6px;
+$all-border: $width-border solid $color-border;
 $skin-color: #fed5b3;
 $hair-color: #a3a3cd;
 * {
@@ -62,9 +63,20 @@ body {
                 }
             }
             &:nth-child(2) {
-                &:nth-child(1) {
-                    top: 100px;
-                    left: 20px;
+                top: 79px;
+                left: 76px;
+                transform: rotate(79deg);
+                div:nth-child(1) {
+                    background: #000;
+                    width: 14px;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+                div:nth-child(2) {
+                    background: #000;
+                    width: 30px;
+                    height: 100%;
+                    border-radius: 5px;
                 }
             }
         }
@@ -109,7 +121,7 @@ body {
                 height: 296px;
                 border-top-left-radius: 45% 35%;
                 border-top-right-radius: 54% 35%;
-                box-shadow: inset 0px 0px 0px 8px $color-border;
+                box-shadow: inset 0px 0px 0px $width-border $color-border;
             }
         }
         .bottom {
@@ -126,16 +138,16 @@ body {
                 height: 100%;
                 border-bottom-left-radius: 50% 79%;
                 border-bottom-right-radius: 48% 79%;
-                box-shadow: inset 0px 0px 0px 8px $color-border;
+                box-shadow: inset 0px 0px 0px $width-border $color-border;
             }
         }
         .middle {
             position: absolute;
             background-color: $skin-color;
-            width: 164px;
+            width: 168px;
             height: 20px;
             top: 50%;
-            left: 8px;
+            left: 6px;
         }
     }
 }
