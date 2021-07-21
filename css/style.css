@@ -25,6 +25,7 @@ body {
 }
 
 .container .hair {
+  position: absolute;
   background: #a3a3cd;
   width: 376px;
   height: 356px;
@@ -35,7 +36,7 @@ body {
   background-color: #000;
 }
 
-.container .hair::after {
+.container .hair::before {
   position: absolute;
   content: '';
   width: 352px;
@@ -45,6 +46,44 @@ body {
           clip-path: polygon(29% 92%, 13% 94%, 20% 82%, 5% 78%, 18% 68%, 3% 53%, 18% 48%, 1% 24%, 25% 29%, 20% 0%, 45% 19%, 62% 0%, 63% 24%, 91% 18%, 80% 43%, 99% 51%, 99% 51%, 81% 61%, 94% 71%, 83% 77%, 90% 91%, 76% 91%, 77% 99%, 69% 96%);
   margin-left: 11px;
   margin-top: 14px;
+}
+
+.container .hair .risk {
+  position: absolute;
+  width: 55px;
+  height: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .hair .risk:nth-child(1) {
+  top: 130px;
+  left: 30px;
+  -webkit-transform: rotate(51deg);
+          transform: rotate(51deg);
+}
+
+.container .hair .risk:nth-child(1) div:nth-child(1) {
+  background: #000;
+  width: 30px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.container .hair .risk:nth-child(1) div:nth-child(2) {
+  background: #000;
+  width: 14px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.container .hair .risk:nth-child(2):nth-child(1) {
+  top: 100px;
+  left: 20px;
 }
 
 .container .ears {

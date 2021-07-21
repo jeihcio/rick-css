@@ -20,6 +20,7 @@ body {
     height: 400px;
     background: #ccc;
     .hair {
+        position: absolute;
         background: $hair-color;
         width: 376px;
         height: 356px;
@@ -27,7 +28,7 @@ body {
         margin-left: 3px;
         margin-top: 2px;
         background-color: $color-border;
-        &::after {
+        &::before {
             position: absolute;
             content: '';
             width: 352px;
@@ -36,6 +37,36 @@ body {
             clip-path: polygon(29% 92%, 13% 94%, 20% 82%, 5% 78%, 18% 68%, 3% 53%, 18% 48%, 1% 24%, 25% 29%, 20% 0%, 45% 19%, 62% 0%, 63% 24%, 91% 18%, 80% 43%, 99% 51%, 99% 51%, 81% 61%, 94% 71%, 83% 77%, 90% 91%, 76% 91%, 77% 99%, 69% 96%);
             margin-left: 11px;
             margin-top: 14px;
+        }
+        .risk {
+            position: absolute;
+            width: 55px;
+            height: 4px;
+            display: flex;
+            justify-content: space-between;
+            &:nth-child(1) {
+                top: 130px;
+                left: 30px;
+                transform: rotate(51deg);
+                div:nth-child(1) {
+                    background: #000;
+                    width: 30px;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+                div:nth-child(2) {
+                    background: #000;
+                    width: 14px;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+            }
+            &:nth-child(2) {
+                &:nth-child(1) {
+                    top: 100px;
+                    left: 20px;
+                }
+            }
         }
     }
     .ears {
