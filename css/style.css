@@ -1,1 +1,80 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.container .head {
+  position: relative;
+  width: 180px;
+  height: 296px;
+}
+
+.container .head .top {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.container .head .top::after {
+  content: '';
+  position: absolute;
+  background: #fed5b3;
+  width: 180px;
+  height: 296px;
+  border-top-left-radius: 45% 35%;
+  border-top-right-radius: 54% 35%;
+  opacity: 0.5;
+}
+
+.container .head .bottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  opacity: 0.5;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.container .head .bottom::after {
+  content: '';
+  position: absolute;
+  background: #fed5b3;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 50% 79%;
+  border-bottom-right-radius: 48% 79%;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=style.css.map */
