@@ -139,6 +139,21 @@ body {
   margin-left: -10px;
 }
 
+.container .head .head-internal {
+  position: absolute;
+  background-color: red;
+  width: 180px;
+  height: 296px;
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .container .head .top {
   position: absolute;
   width: 100%;

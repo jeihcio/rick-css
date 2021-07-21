@@ -108,6 +108,15 @@ body {
         transform: translate(-50%, -50%);
         margin-top: 30px;
         margin-left: -10px;
+        .head-internal {
+            position: absolute;
+            background-color: red;
+            width: 180px;
+            height: 296px;
+            opacity: 0.5;
+            display: flex;
+            flex-direction: column;
+        }
         .top {
             position: absolute;
             width: 100%;
