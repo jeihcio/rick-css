@@ -141,10 +141,8 @@ body {
 
 .container .head .head-internal {
   position: absolute;
-  background-color: red;
   width: 180px;
   height: 296px;
-  opacity: 0.5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,6 +150,59 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.container .head .head-internal .eyes {
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .head .head-internal .eyes .eye {
+  background-color: #fed5b3;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  overflow: hidden;
+}
+
+.container .head .head-internal .eyes .eye .internal {
+  position: relative;
+  background-color: #fff;
+  width: 120px;
+  height: 65px;
+  border-radius: 50%;
+  margin-top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-top: 3px solid #000;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .head .head-internal .eyes .eye .internal .circle {
+  background-color: #000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: -6px;
 }
 
 .container .head .top {

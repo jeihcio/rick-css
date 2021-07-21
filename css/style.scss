@@ -110,12 +110,49 @@ body {
         margin-left: -10px;
         .head-internal {
             position: absolute;
-            background-color: red;
             width: 180px;
             height: 296px;
-            opacity: 0.5;
             display: flex;
             flex-direction: column;
+            .eyes {
+                position: absolute;
+                // background-color: blue;
+                width: 100%;
+                height: 65px;
+                top: 90px;
+                display: flex;
+                justify-content: space-evenly;
+                .eye {
+                    background-color: $skin-color;
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                    border: 3px solid $color-border;
+                    overflow: hidden;
+                    .internal {
+                        position: relative;
+                        background-color: #fff;
+                        width: 120px;
+                        height: 65px;
+                        border-radius: 50%;
+                        margin-top: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-top: 3px solid $color-border;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        .circle {
+                            background-color: #000;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            margin-top: -6px;
+                        }
+                    }
+                }
+            }
         }
         .top {
             position: absolute;
