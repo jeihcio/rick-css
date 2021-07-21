@@ -165,6 +165,27 @@ body {
           justify-content: space-evenly;
 }
 
+.container .head .head-internal .eyes .hidden {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.container .head .head-internal .eyes .hidden-1 {
+  position: absolute;
+  left: 30px;
+  top: -32px;
+  background-color: #fed5b3;
+}
+
+.container .head .head-internal .eyes .hidden-2 {
+  position: absolute;
+  left: 110px;
+  top: -32px;
+  background-color: #fed5b3;
+}
+
 .container .head .head-internal .eyes .eye {
   background-color: #fed5b3;
   width: 65px;
