@@ -1,6 +1,7 @@
 $all-border: 8px solid #000;
 $color-border: #000;
 $skin-color: #fed5b3;
+$hair-color: #a3a3cd;
 * {
     margin: 0;
     padding: 0;
@@ -18,14 +19,31 @@ body {
     width: 400px;
     height: 400px;
     background: #ccc;
-    background-color: red;
-    background-image: url("../assets/referência.png");
+    .hair {
+        background: $hair-color;
+        width: 376px;
+        height: 356px;
+        clip-path: polygon(29% 92%, 13% 94%, 20% 82%, 5% 78%, 18% 68%, 3% 53%, 18% 48%, 1% 24%, 25% 29%, 20% 0%, 45% 19%, 62% 0%, 63% 24%, 91% 18%, 80% 43%, 99% 51%, 99% 51%, 81% 61%, 94% 71%, 83% 77%, 90% 91%, 76% 91%, 77% 99%, 69% 96%);
+        margin-left: 3px;
+        margin-top: 2px;
+        background-color: $color-border;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 352px;
+            height: 332px;
+            background: $hair-color;
+            clip-path: polygon(29% 92%, 13% 94%, 20% 82%, 5% 78%, 18% 68%, 3% 53%, 18% 48%, 1% 24%, 25% 29%, 20% 0%, 45% 19%, 62% 0%, 63% 24%, 91% 18%, 80% 43%, 99% 51%, 99% 51%, 81% 61%, 94% 71%, 83% 77%, 90% 91%, 76% 91%, 77% 99%, 69% 96%);
+            margin-left: 11px;
+            margin-top: 14px;
+        }
+    }
     .ears {
         position: absolute;
         width: 222px;
         height: 60px;
         left: 50%;
-        top: 57%;
+        top: 55%;
         transform: translateX(-50%);
         margin-left: -10px;
         display: flex;
