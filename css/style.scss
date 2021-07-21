@@ -1,3 +1,4 @@
+$all-border: 8px solid #000;
 $color-border: #000;
 $skin-color: #fed5b3;
 * {
@@ -17,14 +18,35 @@ body {
     width: 400px;
     height: 400px;
     background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 20px;
+    background-color: red;
+    background-image: url("../assets/referência.png");
+    .ears {
+        position: absolute;
+        width: 222px;
+        height: 60px;
+        left: 50%;
+        top: 57%;
+        transform: translateX(-50%);
+        margin-left: -10px;
+        display: flex;
+        justify-content: space-between;
+        .ear {
+            background-color: $skin-color;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: $all-border;
+        }
+    }
     .head {
-        position: relative;
+        position: absolute;
         width: 180px;
         height: 296px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 30px;
+        margin-left: -10px;
         .top {
             position: absolute;
             width: 100%;
