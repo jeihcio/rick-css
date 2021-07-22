@@ -322,9 +322,14 @@ body {
   border-radius: 50%;
 }
 
+.container .head .head-internal .mouth .internal div:nth-child(1) {
+  margin-left: -8px;
+  margin-top: 2px;
+}
+
 .container .head .head-internal .mouth .internal div:nth-child(3) {
-  margin-left: 90px;
-  margin-top: -42px;
+  margin-left: 95px;
+  margin-top: -43px;
 }
 
 .container .head .head-internal .mouth .internal div:nth-child(2) {
@@ -332,7 +337,7 @@ body {
   width: 104px;
   height: 40px;
   margin-left: 3px;
-  margin-top: -17px;
+  margin-top: -19px;
   border-radius: 50%;
 }
 
