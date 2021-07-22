@@ -192,11 +192,27 @@ body {
                 margin-left: 50%;
                 margin-top: 3px;
                 transform: translateX(-50%);
+                .darkCircles-1 {
+                    transform: rotate(14deg);
+                }
+                .darkCircles-2 {
+                    transform: rotate(-14deg);
+                }
                 .darkCircles {
-                    width: 40px;
-                    height: 40px;
-                    background-color: $color-border;
+                    width: 57px;
+                    height: 43px;
                     border-radius: 50%;
+                    border: 3px solid $color-border;
+                    margin-top: -33px;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background-color: $skin-color;
+                        width: 60px;
+                        height: 40px;
+                        margin-top: -10px;
+                        margin-left: -5px;
+                    }
                 }
                 .nose {
                     width: 25px;
