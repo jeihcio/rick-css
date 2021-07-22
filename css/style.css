@@ -197,9 +197,20 @@ body {
 .container .head .head-internal .eyebrow {
   width: 100%;
   height: 25px;
-  background: purple;
   z-index: 3;
-  visibility: hidden;
+}
+
+.container .head .head-internal .eyebrow .internal {
+  position: absolute;
+  background-color: #a3a3cd;
+  width: 125px;
+  height: 20px;
+  margin-top: 7px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 10px;
+  border: 3px solid #000;
 }
 
 .container .head .head-internal .eyes {

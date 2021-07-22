@@ -153,9 +153,18 @@ body {
             .eyebrow {
                 width: 100%;
                 height: 25px;
-                background: purple;
                 z-index: 3;
-                visibility: hidden;
+                .internal {
+                    position: absolute;
+                    background-color: $hair-color;
+                    width: 125px;
+                    height: 20px;
+                    margin-top: 7px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 10px;
+                    border: 3px solid $color-border;
+                }
             }
             .eyes {
                 width: 100%;
