@@ -295,10 +295,45 @@ body {
 }
 
 .container .head .head-internal .mouth {
-  background-color: green;
   width: 100%;
   height: 20px;
-  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.container .head .head-internal .mouth .internal {
+  background: #000;
+  width: 110px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.container .head .head-internal .mouth .internal div:nth-child(1),
+.container .head .head-internal .mouth .internal div:nth-child(3) {
+  background-color: #fed5b3;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.container .head .head-internal .mouth .internal div:nth-child(3) {
+  margin-left: 90px;
+  margin-top: -42px;
+}
+
+.container .head .head-internal .mouth .internal div:nth-child(2) {
+  background-color: #fed5b3;
+  width: 104px;
+  height: 40px;
+  margin-left: 3px;
+  margin-top: -17px;
+  border-radius: 50%;
 }
 
 .container .head .top {

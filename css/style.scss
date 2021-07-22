@@ -224,10 +224,37 @@ body {
                 }
             }
             .mouth {
-                background-color: green;
                 width: 100%;
                 height: 20px;
-                visibility: hidden;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                margin-top: 25px;
+                .internal {
+                    background: $color-border;
+                    width: 110px;
+                    height: 40px;
+                    border-radius: 50%;
+                    div:nth-child(1),
+                    div:nth-child(3) {
+                        background-color: $skin-color;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                    }
+                    div:nth-child(3) {
+                        margin-left: 90px;
+                        margin-top: -42px;
+                    }
+                    div:nth-child(2) {
+                        background-color: $skin-color;
+                        width: 104px;
+                        height: 40px;
+                        margin-left: 3px;
+                        margin-top: -17px;
+                        border-radius: 50%;
+                    }
+                }
             }
         }
         .top {
