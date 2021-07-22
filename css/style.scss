@@ -155,58 +155,6 @@ body {
                 height: 25px;
                 z-index: 3;
                 margin-top: 6px;
-                .border {
-                    position: absolute;
-                    width: 136px;
-                    height: 25px;
-                    left: 50%;
-                    transform: translateX(-51%);
-                    display: flex;
-                    top: 48px;
-                    div {
-                        position: absolute;
-                        width: 35px;
-                        height: 21px;
-                        border-radius: 90px;
-                    }
-                    div:nth-child(1) {
-                        background-color: $color-border;
-                        transform: rotate(5deg);
-                        top: 6px;
-                        left: 0px;
-                    }
-                    div:nth-child(2) {
-                        background-color: $color-border;
-                        transform: rotate(1deg);
-                        top: 7px;
-                        left: 23px;
-                    }
-                    div:nth-child(3) {
-                        background-color: $color-border;
-                        transform: rotate(-2deg);
-                        top: 6.8px;
-                        left: 43px;
-                    }
-                    div:nth-child(4) {
-                        background-color: $color-border;
-                        transform: rotate(-6deg);
-                        top: 5.5px;
-                        left: 61px;
-                    }
-                    div:nth-child(5) {
-                        background-color: $color-border;
-                        transform: rotate(-2deg);
-                        top: 4px;
-                        left: 84px;
-                    }
-                    div:nth-child(6) {
-                        background-color: $color-border;
-                        transform: rotate(7deg);
-                        top: 4.5px;
-                        left: 104px;
-                        width: 33px;
-                    }
-                }
                 .internal {
                     position: absolute;
                     width: 136px;
@@ -219,36 +167,67 @@ body {
                         width: 35px;
                         height: 15px;
                         border-radius: 90px;
+                        box-shadow: 0px 0px 0px 3px #000000;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-color: $hair-color;
+                            width: 12px;
+                            height: 15px;
+                            left: -4px;
+                        }
                     }
                     div:nth-child(1) {
                         background-color: $hair-color;
                         transform: rotate(5deg);
                         top: 6px;
                         left: 3px;
+                        &::after {
+                            visibility: hidden;
+                        }
                     }
                     div:nth-child(2) {
                         background-color: $hair-color;
                         transform: rotate(1deg);
                         top: 7px;
                         left: 23px;
+                        &::after {
+                            transform: rotate(2deg);
+                            top: -0.5px;
+                        }
                     }
                     div:nth-child(3) {
                         background-color: $hair-color;
                         transform: rotate(-2deg);
                         top: 6.8px;
                         left: 43px;
+                        &::after {
+                            transform: rotate(2deg);
+                            top: -0.3px;
+                            height: 15.1px;
+                        }
                     }
                     div:nth-child(4) {
                         background-color: $hair-color;
                         transform: rotate(-6deg);
                         top: 5.5px;
                         left: 61px;
+                        &::after {
+                            transform: rotate(5deg);
+                            top: -0.6px;
+                            height: 15.3px;
+                        }
                     }
                     div:nth-child(5) {
                         background-color: $hair-color;
                         transform: rotate(-2deg);
                         top: 4px;
                         left: 84px;
+                        &::after {
+                            transform: rotate(-3deg);
+                            top: 0.1px;
+                            height: 15.2px;
+                        }
                     }
                     div:nth-child(6) {
                         background-color: $hair-color;
@@ -256,6 +235,11 @@ body {
                         top: 4.5px;
                         left: 104px;
                         width: 30px;
+                        &::after {
+                            transform: rotate(-8deg);
+                            top: 1px;
+                            height: 15px;
+                        }
                     }
                 }
             }

@@ -201,75 +201,6 @@ body {
   margin-top: 6px;
 }
 
-.container .head .head-internal .eyebrow .border {
-  position: absolute;
-  width: 136px;
-  height: 25px;
-  left: 50%;
-  -webkit-transform: translateX(-51%);
-          transform: translateX(-51%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 48px;
-}
-
-.container .head .head-internal .eyebrow .border div {
-  position: absolute;
-  width: 35px;
-  height: 21px;
-  border-radius: 90px;
-}
-
-.container .head .head-internal .eyebrow .border div:nth-child(1) {
-  background-color: #000;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
-  top: 6px;
-  left: 0px;
-}
-
-.container .head .head-internal .eyebrow .border div:nth-child(2) {
-  background-color: #000;
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
-  top: 7px;
-  left: 23px;
-}
-
-.container .head .head-internal .eyebrow .border div:nth-child(3) {
-  background-color: #000;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
-  top: 6.8px;
-  left: 43px;
-}
-
-.container .head .head-internal .eyebrow .border div:nth-child(4) {
-  background-color: #000;
-  -webkit-transform: rotate(-6deg);
-          transform: rotate(-6deg);
-  top: 5.5px;
-  left: 61px;
-}
-
-.container .head .head-internal .eyebrow .border div:nth-child(5) {
-  background-color: #000;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
-  top: 4px;
-  left: 84px;
-}
-
-.container .head .head-internal .eyebrow .border div:nth-child(6) {
-  background-color: #000;
-  -webkit-transform: rotate(7deg);
-          transform: rotate(7deg);
-  top: 4.5px;
-  left: 104px;
-  width: 33px;
-}
-
 .container .head .head-internal .eyebrow .internal {
   position: absolute;
   width: 136px;
@@ -287,6 +218,17 @@ body {
   width: 35px;
   height: 15px;
   border-radius: 90px;
+  -webkit-box-shadow: 0px 0px 0px 3px #000000;
+          box-shadow: 0px 0px 0px 3px #000000;
+}
+
+.container .head .head-internal .eyebrow .internal div::after {
+  content: '';
+  position: absolute;
+  background-color: #a3a3cd;
+  width: 12px;
+  height: 15px;
+  left: -4px;
 }
 
 .container .head .head-internal .eyebrow .internal div:nth-child(1) {
@@ -297,12 +239,22 @@ body {
   left: 3px;
 }
 
+.container .head .head-internal .eyebrow .internal div:nth-child(1)::after {
+  visibility: hidden;
+}
+
 .container .head .head-internal .eyebrow .internal div:nth-child(2) {
   background-color: #a3a3cd;
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
   top: 7px;
   left: 23px;
+}
+
+.container .head .head-internal .eyebrow .internal div:nth-child(2)::after {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  top: -0.5px;
 }
 
 .container .head .head-internal .eyebrow .internal div:nth-child(3) {
@@ -313,12 +265,26 @@ body {
   left: 43px;
 }
 
+.container .head .head-internal .eyebrow .internal div:nth-child(3)::after {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  top: -0.3px;
+  height: 15.1px;
+}
+
 .container .head .head-internal .eyebrow .internal div:nth-child(4) {
   background-color: #a3a3cd;
   -webkit-transform: rotate(-6deg);
           transform: rotate(-6deg);
   top: 5.5px;
   left: 61px;
+}
+
+.container .head .head-internal .eyebrow .internal div:nth-child(4)::after {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  top: -0.6px;
+  height: 15.3px;
 }
 
 .container .head .head-internal .eyebrow .internal div:nth-child(5) {
@@ -329,6 +295,13 @@ body {
   left: 84px;
 }
 
+.container .head .head-internal .eyebrow .internal div:nth-child(5)::after {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  top: 0.1px;
+  height: 15.2px;
+}
+
 .container .head .head-internal .eyebrow .internal div:nth-child(6) {
   background-color: #a3a3cd;
   -webkit-transform: rotate(7deg);
@@ -336,6 +309,13 @@ body {
   top: 4.5px;
   left: 104px;
   width: 30px;
+}
+
+.container .head .head-internal .eyebrow .internal div:nth-child(6)::after {
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+  top: 1px;
+  height: 15px;
 }
 
 .container .head .head-internal .eyes {
