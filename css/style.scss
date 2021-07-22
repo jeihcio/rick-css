@@ -185,10 +185,27 @@ body {
                 }
             }
             .inferiorToTheEyes {
-                background-color: red;
-                width: 100%;
+                width: 92%;
                 height: 45px;
-                .darkCircles {}
+                display: flex;
+                justify-content: space-evenly;
+                margin-left: 50%;
+                margin-top: 3px;
+                transform: translateX(-50%);
+                .darkCircles {
+                    width: 40px;
+                    height: 40px;
+                    background-color: $color-border;
+                    border-radius: 50%;
+                }
+                .nose {
+                    width: 25px;
+                    height: 100%;
+                    border: 4px solid $color-border;
+                    border-top: none;
+                    border-bottom-left-radius: 48%;
+                    border-bottom-right-radius: 48%;
+                }
             }
             .mouth {
                 background-color: green;
